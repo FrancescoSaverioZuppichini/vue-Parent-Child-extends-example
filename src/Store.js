@@ -4,7 +4,9 @@ import Parent from './Parent.js'
 class Store{
   constructor(){
     this.parent = new Parent("Francesco")
-    this.parent.addChild(new Child("Luca"))
+    let luca = new Parent("Luca")
+    luca.addChild(new Child("Mario"))
+    this.parent.addChild(luca)
     this.parent.addChild(new Child("Marco"))
 
   }
